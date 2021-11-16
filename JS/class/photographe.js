@@ -21,7 +21,7 @@ export default class Photographe {
     divPhotographe.setAttribute("class", "photographer");
 
     divPhotographe.innerHTML = `
-      <a class="lien_photographer" href="pageHTML/profil.html?id=${this.id}">
+      <a class="lien_photographer" href="/pageHTML/profil.html?id=${this.id}">
         <img class="photographer_portrait" src="Sample/Photographers ID Photos/${this.portrait}">
         <h2 class="photographer_name">${this.name}</h2>
       </a>
