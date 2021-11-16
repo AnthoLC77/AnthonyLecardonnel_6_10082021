@@ -1,0 +1,532 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+}
+
+.hidden {
+  overflow: hidden;
+}
+
+.none {
+  display: none;
+}
+
+header {
+  margin-bottom: 30px;
+}
+
+#container {
+  width: 65%;
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+li {
+  list-style-type: none;
+  cursor: pointer;
+  z-index: 5;
+}
+
+li a {
+  font-size: 1em;
+}
+
+a {
+  text-decoration: none;
+  color: #901c1c;
+  font-weight: bolder;
+}
+
+.card_photographer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 35px 40px;
+  background: #fafafa;
+  position: relative;
+}
+
+.infos_photographer {
+  display: flex;
+  flex-direction: column;
+}
+
+.photographer_name {
+  color: #d3573c;
+  font-size: 3.5em;
+  margin-right: 80px;
+}
+
+.photographer_country {
+  color: #901c1c;
+  font-size: 1.6em;
+  margin-bottom: 5px;
+}
+
+.photographer_tagline {
+  color: #525252;
+  font-size: 1.1em;
+}
+
+.photographer_tag {
+  border: 0.5px solid #c4c4c4;
+  border-radius: 10px;
+  padding: 2px 5px;
+  margin: 3px;
+}
+
+.btn_contact {
+  position: absolute;
+  top: 65px;
+  left: 480px;
+  background: #901c1c;
+  font-size: 1.1em;
+  line-height: 26px;
+  color: white;
+  padding: 15px 10px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.photographer_portrait {
+  width: 200px;
+  height: 200px;
+  background-size: cover;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.label_sort {
+  font-size: 1.2em;
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+#select {
+  width: 100%;
+  max-width: 170px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.3em;
+  background: #911c1c;
+  color: white;
+  padding: 15px;
+}
+
+.sort {
+  margin: 20px 0 20px 0;
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+
+.arrow_down {
+  position: absolute;
+  left: 220px;
+  top: 22px;
+  width: 15px;
+}
+
+.rotate {
+  transform: rotate(180deg);
+}
+
+/************** Formulaire ******************/
+
+.bground {
+  display: none;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  z-index: 20;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background: rgba(196, 196, 196, 0.4);
+}
+
+.input_like {
+  width: 35px;
+  font-size: 1.2em;
+  color: #901c1c;
+  font-weight: bolder;
+  background: none;
+  border: none;
+  pointer-events: none;
+}
+
+.content {
+  display: flex;
+  width: 100%;
+  max-width: 669px;
+  max-height: 900px;
+  margin: 5% auto;
+  overflow: hidden;
+  position: relative;
+  background: #db8876;
+  padding: 20px 30px;
+}
+
+.modal_body {
+  width: 100%;
+}
+
+.close {
+  position: absolute;
+  right: 25px;
+  top: 40px;
+  width: 40px;
+  height: 5px;
+  cursor: pointer;
+  background-color: #db8876;
+  border: none;
+}
+
+.close img {
+  width: 42px;
+  cursor: pointer;
+}
+
+.label_form {
+  color: #312e2e;
+  font-size: 2.2em;
+}
+
+.text-control {
+  width: 100%;
+  max-width: 599px;
+  height: 68px;
+  border-radius: 5px;
+  font-size: 2.2em;
+  padding: 15px;
+  border: none;
+}
+
+#form_msg {
+  margin: 10px 0px 20px 0px;
+}
+
+.title_modal {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #000;
+}
+
+.btn_submit {
+  padding: 17px 40px;
+  height: auto;
+  border: none;
+  background: #911c1c;
+  color: #fff;
+  font-size: 0.9em;
+  border-radius: 5px;
+}
+
+/************** Media ******************/
+
+.list_media {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.media {
+  margin-bottom: 40px;
+  width: 29%;
+}
+
+.media_link_image,
+.media_link_video {
+  width: 100%;
+  height: 300px;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+.media_infos {
+  display: flex;
+  justify-content: space-between;
+}
+
+.media_infos p {
+  font-size: 1.3em;
+  color: #901c1c;
+}
+
+.media_likes {
+  display: flex;
+  align-items: center;
+}
+
+.media_likes span {
+  font-size: 1.3em;
+  color: #901c1c;
+  font-weight: bolder;
+  margin-right: 5px;
+}
+
+.media_likes img {
+  cursor: pointer;
+}
+
+/************** Card Infos ******************/
+
+.rec_infos {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  bottom: 0;
+  right: 334px;
+  width: 300px;
+  background: #db8876;
+  padding: 20px;
+  border-radius: 5px;
+  z-index: 10;
+}
+
+.rec_infos_like,
+.rec_infos_price {
+  display: flex;
+  align-items: center;
+  font-size: 1.3em;
+}
+
+.rec_infos_like span {
+  margin-right: 5px;
+}
+
+/* ---- Lightbox ---- */
+
+.modal_lightbox {
+  display: none;
+  /*display: flex;*/
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  overflow: hidden;
+  inset: 0;
+  background: #fff;
+  z-index: 20;
+}
+
+.lightbox_container {
+  display: inline-grid;
+  position: relative;
+  align-items: center;
+  grid-template-columns: 50px 3fr 50px;
+  grid-column-gap: 20px;
+  grid-row-gap: 10px;
+  max-width: 70%;
+}
+
+.lightbox_media {
+  width: 100%;
+  grid-area: 1/2;
+}
+
+.lightbox_media img {
+  position: relative;
+  width: 100%;
+  max-height: 90vh;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.video_ligtbox {
+  width: 100%;
+}
+
+.title_lightbox {
+  grid-area: 2/2;
+  font-size: 1.75em;
+  color: #901c1c;
+}
+
+.btn_arrow_left {
+  grid-area: 1/1;
+}
+
+.btn_arrow_right {
+  grid-area: 1/3;
+}
+
+.btn_close {
+  grid-area: 1/3;
+  position: absolute;
+  top: 0;
+}
+
+.btn_arrow_right,
+.btn_arrow_left,
+.btn_close {
+  cursor: pointer;
+  border: 0px;
+  background: #fff;
+}
+
+#arrow_left,
+#arrow_right,
+#close_ligthbox {
+  max-width: 1.7em;
+}
+/******* MEDIA QUERIES ******/
+
+@media screen and (max-width: 768px) {
+  #logo {
+    width: 150px;
+  }
+
+  #container {
+    width: 100%;
+    margin: 0;
+    font-size: 1.1em;
+    padding: 15px;
+  }
+
+  main {
+    width: 100%;
+  }
+
+  .card_photographer {
+    padding: 0;
+    background: white;
+  }
+
+  .infos_photographer {
+    width: 70%;
+  }
+
+  .photographer_name {
+    width: 100%;
+    font-size: 2em;
+    font-weight: normal;
+    margin: 0;
+  }
+
+  .photographer_taglist {
+    justify-content: flex-start;
+  }
+
+  .photographer_tagline,
+  .photographer_country {
+    font-size: 0.8em;
+  }
+
+  .photographer_portrait {
+    width: 100px;
+    height: 100px;
+    border-radius: 80%;
+  }
+
+  .photographer_tag {
+    font-size: 0.7em;
+  }
+
+  .btn_contact {
+    position: fixed;
+    left: 50%;
+    top: 90%;
+    transform: translate(-50%, -50%);
+    height: 50px;
+    width: 150px;
+    padding: 5px;
+    bottom: 20px;
+  }
+
+  #trie {
+    display: none;
+  }
+
+  .list_media {
+    flex-direction: column;
+    margin-top: 30px;
+  }
+
+  .media {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .media .media_link_image {
+    height: 250px;
+  }
+
+  .media_infos {
+    margin-top: 5px;
+  }
+  .media_infos p,
+  .media_likes span {
+    font-size: 1em;
+  }
+
+  .rec_infos {
+    display: none;
+  }
+
+  .lightbox_container {
+    max-width: 100%;
+    justify-content: center;
+    grid-template-columns: none;
+  }
+
+  #arrow_left,
+  #arrow_right,
+  #close_ligthbox {
+    width: 1.3em;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1230px) {
+  .media {
+    width: 49%;
+  }
+
+  .btn_contact {
+    max-width: 160px;
+    width: 100%;
+    position: fixed;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .rec_infos {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .title_modal {
+    font-size: 1.7em;
+  }
+
+  .text {
+    max-height: 50px;
+  }
+
+  label {
+    font-size: 1.5em;
+  }
+
+  .close img {
+    width: 30px;
+  }
+}

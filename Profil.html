@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/profil.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="container">
+        <header>
+            <a href="index.html">
+                <img id="logo" src="../icones/logo.png" alt="Logo fishEye">
+            </a>
+        </header>
+        <main>
+            <!--Injecté via profil.js--> 
+        </main>
+        <div class="sort">
+            <span class="label_sort">Trier par</span><br>
+            <select name="sort" id="select">
+                <option value="Popularite">Popularité</option>
+                <option value="Date">Date</option>
+                <option value="Titre">Titre</option>
+            </select>
+            <img class="arrow_down" src="icones/chevron-down-solid.png" alt="Arrow Down">
+        </div>
+        <section class="list_media">
+           <!--Injecté via profil.js--> 
+
+        </section>
+        <div class="rec_infos">
+            <div class="rec_infos_like">
+                <span id="total_like"></span>
+                <img src="icones/heart_black.png" alt="Coeur icone">
+            </div>
+            <div>
+                <span class="rec_infos_price">300€ / jour</span>
+            </div>
+        </div>
+       <div class="modal_lightbox">
+            <div class="lightbox_container">
+                <div class="lightbox_media">
+                </div>
+                <p class="title_lightbox"></p>
+                <button aria-label="precedent"  type="button" class="btn_arrow_left">
+                    <img id="arrow_left" src="icones/arrowLeft.png" alt="fleche_précédent">
+                </button>
+                <button aria-label="next" type="button" class="btn_arrow_right">
+                    <img id="arrow_right" src="icones/Arrow_right.png" alt="fleche suivant">
+                </button>
+                <button aria-label="close" type="button" class="btn_close">
+                    <img id="close_ligthbox" src="icones/close_btn.png" alt="Croix fermeture">
+                </button>
+            </div>
+        </div>
+        <div id="background" class="bground">
+            <div class="content">
+                <button class="close" id="close" aria-label="close formulaire">
+                    <img src="icones/CroixBlanche.png" alt="croix fermeture">
+                </button>
+                <div class="modal_body">
+                    <form 
+                        id="myForm"
+                        action="Mimi_keel.html"
+                        name="contact"
+                        method="GET"
+                        aria-label="formulaire de contact">
+                        <h1 class="title_modal"></h1>
+                        <div class="formData">
+                            <label class="label_form" for="firstName">Prénom</label><br>
+                            <input
+                                id="firstName"
+                                class="text-control text"
+                                type="text"
+                                name="firstName"
+                                minlength="2"
+                                pattern= "[A-Za-z]{1,32}"
+                                value=""><br>
+                            <p class="error"></p>
+                        </div>
+                        <div class="formData">
+                            <label class="label_form" for="lastName">Nom</label><br>
+                            <input
+                                id="lastName"
+                                class="text-control text"
+                                type="text"
+                                name="lastName"
+                                minlength="2"
+                                pattern= "[A-Za-z]{1,32}"><br>
+                            <p class="error"></p>
+                        </div>
+                        <div class="formData">
+                            <label class="label_form" for="email">Email</label><br>
+                            <input
+                                id="email"
+                                class="text-control text"
+                                type="text"
+                                name="email"><br>
+                            <p class="error"></p>
+                        </div>
+                        <div class="formData" id="form_msg">
+                            <label class="label_form" for="message">Votre message</label><br>
+                            <input
+                                id="message"
+                                class="text-control"
+                                type="text"
+                                name="message"
+                                minlength="9"
+                                style="height: 170px;"><br>
+                            <p id="message_error"></p>
+                        </div>
+                        <button class="btn_submit">Envoyer</button>
+                    </form> 
+                </div>
+            </div>     
+        </div>
+    </div>
+    <script type="module" src="JS/profil.js"></script>
+</body>
+</html>
+
+
