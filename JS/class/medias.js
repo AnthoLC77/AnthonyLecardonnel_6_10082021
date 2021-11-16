@@ -70,7 +70,7 @@ export default class Media {
 
   getLikeBtn = () => {
     const likeBtn = document.createElement("img");
-    likeBtn.setAttribute("src", "icones/vector.png");
+    likeBtn.setAttribute("src", "../icones/vector.png");
     likeBtn.setAttribute("aria-label", "likes");
     likeBtn.setAttribute("role", "button");
     likeBtn.setAttribute("tabindex", "0");
@@ -93,11 +93,11 @@ export default class Media {
 
   getMediaChoice = () => {
     if (this.image) {
-      return `<img class="media_link_image items" src="Sample/${this.photographerId}/${this.image}" alt="${this.title}">`;
+      return `<img class="media_link_image items" src="../Sample/${this.photographerId}/${this.image}" alt="${this.title}">`;
     }
 
     if (this.video) {
-      return `<video class="media_link_video items" src="Sample/${this.photographerId}/${this.video}" type="video/mp4" alt="${this.title}">
+      return `<video class="media_link_video items" src="../Sample/${this.photographerId}/${this.video}" type="video/mp4" alt="${this.title}">
         <source src="Sample/${this.photographerId}/${this.video}" type="video/mp4">
        </video>`;
     }
@@ -105,11 +105,11 @@ export default class Media {
 
   getLinkChoice = () => {
     if (this.image) {
-      return `Sample/${this.photographerId}/${this.image}`;
+      return `../Sample/${this.photographerId}/${this.image}`;
     }
 
     if (this.video) {
-      return `Sample/${this.photographerId}/${this.video}`;
+      return `../Sample/${this.photographerId}/${this.video}`;
     }
   };
 }

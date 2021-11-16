@@ -660,6 +660,7 @@ var photographersData = JSON.parse(JSON.stringify(Photographers));
 var mediaData = JSON.parse(JSON.stringify(media));
 
 //---------------------------------------------------------------------
+//import Photographe from "./class/photographe.js";
 import Photographe from "./class/photographe.js";
 import Media from "./class/medias.js";
 import Tags from "./class/tags.js";
