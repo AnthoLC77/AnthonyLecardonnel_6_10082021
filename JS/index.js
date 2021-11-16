@@ -8,6 +8,7 @@ var Photographers = [
     tagline: "Voir le beau dans le quotidien",
     price: 400,
     portrait: "MimiKeel.jpg",
+    alt: "Mimi Keel",
   },
   {
     name: "Ellie-Rose Wilkens",
@@ -18,6 +19,7 @@ var Photographers = [
     tagline: "Capturer des compositions complexes",
     price: 250,
     portrait: "EllieRoseWilkens.jpg",
+    alt: "Ellie-Rose Wilkens",
   },
   {
     name: "Tracy Galindo",
@@ -28,6 +30,7 @@ var Photographers = [
     tagline: "Photographe freelance",
     price: 500,
     portrait: "TracyGalindo.jpg",
+    alt: "Tracy Galindo",
   },
   {
     name: "Nabeel Bradford",
@@ -38,6 +41,7 @@ var Photographers = [
     tagline: "Toujours aller de l'avant",
     price: 350,
     portrait: "NabeelBradford.jpg",
+    alt: "Nabeel Bradford",
   },
   {
     name: "Rhode Dubois",
@@ -48,6 +52,7 @@ var Photographers = [
     tagline: "Je crée des souvenirs",
     price: 275,
     portrait: "RhodeDubois.jpg",
+    alt: "Rhode Dubois",
   },
   {
     name: "Marcel Nikolic",
@@ -58,6 +63,7 @@ var Photographers = [
     tagline: "Toujours à la recherche de LA photo",
     price: 300,
     portrait: "MarcelNikolic.jpg",
+    alt: "Marcel Nikolic",
   },
 ];
 

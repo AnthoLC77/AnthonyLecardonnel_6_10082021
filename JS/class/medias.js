@@ -70,7 +70,7 @@ export default class Media {
 
   getLikeBtn = () => {
     const likeBtn = document.createElement("img");
-    likeBtn.setAttribute("src", "../icones/vector.png");
+    likeBtn.setAttribute("src", "../icones/Vector.png");
     likeBtn.setAttribute("aria-label", "likes");
     likeBtn.setAttribute("role", "button");
     likeBtn.setAttribute("tabindex", "0");

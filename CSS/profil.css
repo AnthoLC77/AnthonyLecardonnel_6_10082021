@@ -389,7 +389,7 @@ a {
 }
 /******* MEDIA QUERIES ******/
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
   #logo {
     width: 150px;
   }
@@ -451,7 +451,7 @@ a {
     bottom: 20px;
   }
 
-  #trie {
+  .sort {
     display: none;
   }
 
@@ -494,7 +494,7 @@ a {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1230px) {
+@media screen and (min-width: 900px) and (max-width: 1230px) {
   .media {
     width: 49%;
   }

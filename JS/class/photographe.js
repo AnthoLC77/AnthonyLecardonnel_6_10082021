@@ -10,6 +10,7 @@ export default class Photographe {
     this.price = Photographe.price;
     this.portrait = Photographe.portrait;
     this.tags = Photographe.tags;
+    this.alt = Photographe.alt;
   }
 
   // Create and flip the photographer's view in miniature (page index.html)
@@ -22,7 +23,7 @@ export default class Photographe {
 
     divPhotographe.innerHTML = `
       <a class="lien_photographer" href="pageHTML/Profil.html?id=${this.id}">
-        <img class="photographer_portrait" src="Sample/Photographers ID Photos/${this.portrait}">
+        <img class="photographer_portrait" src="Sample/Photographers ID Photos/${this.portrait}" alt="${this.alt}">
         <h2 class="photographer_name">${this.name}</h2>
       </a>
       <div class="photographer_infos">
@@ -62,6 +63,7 @@ export default class Photographe {
       "src",
       `../Sample/Photographers ID Photos/${this.portrait}`
     );
+    imgPhotographe.setAttribute("alt", `${this.alt}`);
 
     infosPhotographe.innerHTML = `
     <h1 class="photographer_name">${this.name}</h1>
