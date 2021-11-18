@@ -878,11 +878,9 @@ window.addEventListener("keydown", function (event) {
 
   switch (key) {
     case "ArrowLeft":
-      console.log("left");
       slideLeft();
       break;
     case "ArrowRight":
-      console.log("Right");
       slideNext();
       break;
     case "Escape":
