@@ -62,6 +62,32 @@ main {
   margin-top: 60px;
 }
 
+.btn {
+  max-width: 170px;
+  height: 19px;
+  display: none;
+  position: fixed;
+  left: 50%;
+  top: 20px;
+  transform: translate(-50%, -50%);
+  background: #db8876;
+  border-radius: 5px;
+  padding: 8px;
+  cursor: pointer;
+  z-index: 3;
+}
+
+.btn p {
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.anim-scroll {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .photographer {
   display: flex;
   flex-direction: column;
@@ -144,7 +170,6 @@ main {
 .red a {
   color: white;
 }
-
 
 /*-----MEDIA QUERIES-----*/
 

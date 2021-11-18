@@ -676,6 +676,27 @@ photographersData.forEach((element) => {
   main.appendChild(elementIndex);
 });
 
+// Scroll animation
+
+const btnScrollY = document.querySelector(".btn");
+console.log(window);
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 20) {
+    btnScrollY.classList.add("anim-scroll");
+  } else {
+    btnScrollY.classList.remove("anim-scroll");
+  }
+});
+
+btnScrollY.addEventListener("click", () => {
+  window.scrollTo({
+    top: 0,
+    left: 0,
+    behavior: "smooth",
+  });
+});
+
 // profile filter according to the tag
 
 const tagsNavigation = document.querySelectorAll(".tag_item");
