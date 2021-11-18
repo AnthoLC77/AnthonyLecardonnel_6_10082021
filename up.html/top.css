@@ -33,3 +33,25 @@
   font-size: 17px;
   font-weight: 700;
 }
+
+.heart {
+  width: 100px;
+  height: 100px;
+}
+
+.icone {
+  width: 18px;
+  display: none;
+  cursor: pointer;
+}
+
+.toggle {
+  display: flex;
+  background: url(icon/red.jpg);
+}
+
+/*
+.red {
+  display: flex;
+}
+*/

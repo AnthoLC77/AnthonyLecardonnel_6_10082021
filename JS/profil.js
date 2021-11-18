@@ -795,7 +795,6 @@ let video;
 // Create the image or video in the lightbox
 
 for (let l = 0; l < mediaA.length; l++) {
-  console.log(mediaA[l].href);
   mediaA[l].addEventListener("click", (e) => {
     e.preventDefault();
     modalLightbox.style.display = "flex";

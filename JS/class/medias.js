@@ -26,7 +26,8 @@ export default class Media {
       this.likes += 1;
       Media.totalLikes += 1;
     }
-
+    this.likeBtn.classList.toggle("far");
+    this.likeBtn.classList.toggle("fa");
     this.liked = !this.liked;
     this.likeCount.innerHTML = this.likes;
     document.getElementById("total_like").innerHTML = Media.totalLikes;
@@ -70,7 +71,8 @@ export default class Media {
 
   getLikeBtn = () => {
     const likeBtn = document.createElement("img");
-    likeBtn.setAttribute("src", "../icones/Vector.png");
+    likeBtn.setAttribute("src", "../icones/heart-regular.svg");
+    likeBtn.setAttribute("class", "far");
     likeBtn.setAttribute("aria-label", "likes");
     likeBtn.setAttribute("role", "button");
     likeBtn.setAttribute("tabindex", "0");

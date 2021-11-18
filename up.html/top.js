@@ -17,3 +17,22 @@ btn.addEventListener("click", () => {
     behavior: "smooth",
   });
 });
+
+const heartWhite = document.querySelector(".white");
+const heartRed = document.querySelector(".fa");
+console.log(heartRed);
+
+
+
+
+
+heartWhite.addEventListener("click", () => {
+  heartWhite.classList.remove("white");
+  heartRed.classList.add("red");
+})
+
+
+heartRed.addEventListener("click", () => {
+  heartRed.classList.remove("red");
+  heartWhite.classList.add("white");
+});

@@ -276,6 +276,15 @@ a {
   align-items: center;
 }
 
+.far,
+.fa {
+  width: 19px;
+}
+
+.fa {
+  content: url(/icones/red.jpg);
+}
+
 .media_likes span {
   font-size: 1.3em;
   color: #901c1c;
